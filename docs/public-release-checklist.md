@@ -14,13 +14,13 @@ It should not yet be presented as:
 
 ```text
 A production PR-review tool.
-A full Skippy replacement.
+A general-purpose autonomous software delivery agent.
 A general-purpose autonomous agent framework.
 ```
 
 ## Required Before Public
 
-- [ ] Decide and add a license.
+- [x] Decide and add a license: MIT.
 - [ ] Keep README positioning modest and clear.
 - [ ] Confirm no local machine paths remain in public docs.
 - [ ] Confirm no API keys, tokens, `.env` files, or private logs are committed.
