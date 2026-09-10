@@ -262,3 +262,7 @@ No autonomous issue selection yet.
 
 That is the point. The project starts with one understandable workflow, then
 adds agentic capabilities one phase at a time.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
