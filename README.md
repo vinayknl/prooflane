@@ -24,7 +24,7 @@ The agent makes a typed judgment. Java owns the workflow route.
 
 ```bash
 ./mvnw test
-./mvnw spring-boot:run -- -Dprooflane.repo=/path/to/repo
+./mvnw spring-boot:run -Dspring-boot.run.arguments=/path/to/repo
 ```
 
 Real OpenAI mode:
@@ -33,5 +33,5 @@ Real OpenAI mode:
 export OPENAI_API_KEY=...
 export PROOFLANE_AGENT_MODE=openai
 export PROOFLANE_SPRING_AI_MODEL=openai
-./mvnw spring-boot:run -- -Dprooflane.repo=/path/to/repo
+./mvnw spring-boot:run -Dspring-boot.run.arguments=/path/to/repo
 ```

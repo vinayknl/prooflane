@@ -21,7 +21,8 @@ class ProoflaneRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-		var repo = Path.of(System.getProperty("prooflane.repo", ".")).toAbsolutePath().normalize();
+		var repoArgument = args.length > 0 ? args[0] : System.getProperty("prooflane.repo", ".");
+		var repo = Path.of(repoArgument).toAbsolutePath().normalize();
 		var receipt = workflowService.checkReadiness(repo);
 		System.out.println("Prooflane route: " + receipt.route());
 		System.out.println("Status: " + receipt.result().status());
