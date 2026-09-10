@@ -54,13 +54,11 @@ Java-flavored learning project for evidence-driven agentic workflows with Spring
 
 ## GitHub Settings To Enable After Public
 
-These are currently blocked while the repository is private on the current
-GitHub plan.
-
-- [ ] Enable branch protection on `main`.
-- [ ] Require pull request reviews before merging to `main`.
-- [ ] Require status checks to pass before merging, including CI.
-- [ ] Require branches to be up to date before merging.
+- [x] Enable branch protection on `main`.
+- [x] Require pull request reviews before merging to `main`.
+- [x] Require code owner review before merging to `main`.
+- [x] Require status checks to pass before merging, including CI.
+- [x] Require branches to be up to date before merging.
 - [ ] Confirm secret scanning is enabled.
 - [ ] Confirm CodeQL runs successfully after the first public push or pull request.
 
