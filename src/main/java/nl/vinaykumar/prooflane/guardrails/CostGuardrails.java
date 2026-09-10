@@ -16,7 +16,9 @@ public class CostGuardrails {
 	public EvidencePacket truncate(EvidencePacket packet) {
 		return new EvidencePacket(
 				packet.repo(),
+				packet.gitStatusExitCode(),
 				truncate(packet.gitStatus()),
+				packet.diffSummaryExitCode(),
 				truncate(packet.diffSummary()),
 				packet.testCommand(),
 				packet.testExitCode(),

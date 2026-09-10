@@ -3,6 +3,7 @@ package nl.vinaykumar.prooflane.evidence;
 import java.nio.file.Path;
 
 import nl.vinaykumar.prooflane.guardrails.CostGuardrails;
+import nl.vinaykumar.prooflane.tools.CommandResult;
 import nl.vinaykumar.prooflane.tools.RepoTools;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,14 +30,22 @@ public class EvidenceService {
 		if (repoTools == null || guardrails == null) {
 			throw new IllegalStateException("EvidenceService test subclass must override gather");
 		}
+		var gitStatus = repoTools.gitStatus(repo);
+		var diffSummary = repoTools.diffSummary(repo);
 		var testResult = repoTools.runTests(repo);
 		var raw = new EvidencePacket(
 				repo.toString(),
-				repoTools.gitStatus(repo),
-				repoTools.diffSummary(repo),
+				knownExitCode(gitStatus),
+				gitStatus.output(),
+				knownExitCode(diffSummary),
+				diffSummary.output(),
 				"./mvnw test",
-				testResult.exitCode(),
+				knownExitCode(testResult),
 				testResult.output());
 		return guardrails.truncate(raw);
+	}
+
+	private Integer knownExitCode(CommandResult result) {
+		return result.exitCode() < 0 ? null : result.exitCode();
 	}
 }

@@ -15,6 +15,20 @@ class FakeVerifierAgent implements VerifierAgent {
 
 	@Override
 	public VerificationResult verify(EvidencePacket evidence) {
+		if (!evidence.gitStatusExitCodeKnown()) {
+			return new VerificationResult(
+					VerificationStatus.BLOCKED,
+					List.of("git status did not produce a known exit code"),
+					List.of("repository is not a supported git work tree"),
+					"Run Prooflane against an existing git repository.");
+		}
+		if (!evidence.gitStatusSucceeded()) {
+			return new VerificationResult(
+					VerificationStatus.BLOCKED,
+					List.of("git status exited with " + evidence.gitStatusExitCode()),
+					List.of("repository git state could not be read"),
+					"Run Prooflane against an existing git repository with readable git state.");
+		}
 		if (!evidence.testExitCodeKnown()) {
 			return new VerificationResult(
 					VerificationStatus.BLOCKED,
