@@ -2,6 +2,28 @@
 
 What changed and why?
 
+## Naming
+
+Branch names should use a standard prefix:
+
+```text
+feat/short-description
+fix/short-description
+docs/short-description
+test/short-description
+chore/short-description
+refactor/short-description
+```
+
+PR titles should start with a clear verb and describe the user-visible change,
+for example:
+
+```text
+Add behavioral eval fixtures
+Fix RepoTools path handling
+Document workflow routing
+```
+
 ## Workflow Impact
 
 - [ ] No LLM calls added or changed
