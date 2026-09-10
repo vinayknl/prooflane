@@ -18,7 +18,15 @@ public class EvidenceService {
 		this.guardrails = guardrails;
 	}
 
+	protected EvidenceService() {
+		this.repoTools = null;
+		this.guardrails = null;
+	}
+
 	public EvidencePacket gather(Path repo) {
+		if (repoTools == null || guardrails == null) {
+			throw new IllegalStateException("EvidenceService test subclass must override gather");
+		}
 		var testResult = repoTools.runTests(repo);
 		var raw = new EvidencePacket(
 				repo.toString(),
