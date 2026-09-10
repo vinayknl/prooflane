@@ -1,0 +1,27 @@
+name: Behavioral Eval
+description: Add or improve an eval for agentic workflow behavior.
+title: "[Eval]: "
+labels: ["type:eval"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: What situation should the workflow handle?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-route
+    attributes:
+      label: Expected Route
+      description: Which route or terminal state should be reached?
+    validations:
+      required: true
+  - type: textarea
+    id: fixtures
+    attributes:
+      label: Fixtures
+      description: What fake agent response, evidence packet, or command result is needed?
+    validations:
+      required: true
+

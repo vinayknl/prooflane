@@ -1,0 +1,38 @@
+name: Feature
+description: Propose a focused Prooflane feature.
+title: "[Feature]: "
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What should be true when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence Or Motivation
+      description: What source, behavior, or learning goal motivates this?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done Means
+      description: What test, eval, command, or receipt proves completion?
+    validations:
+      required: true
+  - type: dropdown
+    id: llm-cost
+    attributes:
+      label: LLM Cost Impact
+      options:
+        - No LLM call impact
+        - May change token usage
+        - Adds a new opt-in LLM path
+        - Unknown
+    validations:
+      required: true
+
