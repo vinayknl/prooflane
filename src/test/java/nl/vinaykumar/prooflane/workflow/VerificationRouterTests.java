@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 class VerificationRouterTests {
 
 	private final VerificationRouter router = new VerificationRouter();
-	private final EvidencePacket cleanEvidence = new EvidencePacket(".", "", "", "./mvnw test", 0, "OK");
+	private final EvidencePacket cleanEvidence = new EvidencePacket(".", 0, "", 0, "", "./mvnw test", 0, "OK");
 
 	@Test
 	void passRoutesToDeliveryWithRefreshEvidence() {

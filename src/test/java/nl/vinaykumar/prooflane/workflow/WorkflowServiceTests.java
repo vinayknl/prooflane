@@ -22,7 +22,9 @@ class WorkflowServiceTests {
 	private final Path repo = Path.of("/tmp/example-repo");
 	private final EvidencePacket evidence = new EvidencePacket(
 			repo.toString(),
+			0,
 			"",
+			0,
 			"",
 			"./mvnw test",
 			0,

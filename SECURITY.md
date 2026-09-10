@@ -13,6 +13,13 @@ Never commit:
 - raw private test logs
 - repository content that the owner did not intend to send to an LLM
 
+## Local Repository Execution
+
+Prooflane is intended for repositories you trust. The local readiness workflow
+may execute repository-local build wrappers such as `./mvnw test` or
+`./gradlew test`. Treat unknown repositories as untrusted code and review them
+before running Prooflane against them.
+
 ## LLM Safety Boundaries
 
 Features that call an LLM must:

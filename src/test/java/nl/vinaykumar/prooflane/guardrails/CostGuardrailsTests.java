@@ -14,7 +14,7 @@ class CostGuardrailsTests {
 		var guardrails = new CostGuardrails();
 		guardrails.setMaxEvidenceChars(8);
 
-		var truncated = guardrails.truncate(new EvidencePacket(".", "clean", "0123456789", "./mvnw test", 0, "abcdefghij"));
+		var truncated = guardrails.truncate(new EvidencePacket(".", 0, "clean", 0, "0123456789", "./mvnw test", 0, "abcdefghij"));
 
 		assertThat(truncated.diffSummary()).contains("[truncated by Prooflane cost guardrail]");
 		assertThat(truncated.testOutput()).contains("[truncated by Prooflane cost guardrail]");

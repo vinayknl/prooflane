@@ -231,6 +231,14 @@ Git
 
 No API key is required for fake mode.
 
+Security note:
+
+```text
+Run Prooflane only against repositories you trust.
+The local readiness check may execute ./mvnw test or ./gradlew test from the target repository.
+That is useful for local verification, but it can execute repository-controlled build code.
+```
+
 Run tests:
 
 ```bash
