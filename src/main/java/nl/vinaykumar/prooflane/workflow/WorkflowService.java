@@ -15,6 +15,7 @@ import nl.vinaykumar.prooflane.model.WorkflowRun;
 import nl.vinaykumar.prooflane.model.WorkflowState;
 import nl.vinaykumar.prooflane.model.WorkflowTransition;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -25,6 +26,7 @@ public class WorkflowService {
 	private final VerificationRouter router;
 	private final Clock clock;
 
+	@Autowired
 	public WorkflowService(EvidenceService evidenceService, VerifierAgent verifierAgent, VerificationRouter router) {
 		this(evidenceService, verifierAgent, router, Clock.systemUTC());
 	}

@@ -5,6 +5,7 @@ import java.nio.file.Path;
 import nl.vinaykumar.prooflane.guardrails.CostGuardrails;
 import nl.vinaykumar.prooflane.tools.RepoTools;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,6 +14,7 @@ public class EvidenceService {
 	private final RepoTools repoTools;
 	private final CostGuardrails guardrails;
 
+	@Autowired
 	public EvidenceService(RepoTools repoTools, CostGuardrails guardrails) {
 		this.repoTools = repoTools;
 		this.guardrails = guardrails;
