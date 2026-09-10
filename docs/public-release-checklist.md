@@ -33,7 +33,7 @@ A general-purpose autonomous agent framework.
 - [x] Add CI for pull requests and pushes to `main`.
 - [x] Add Dependabot configuration for Maven and GitHub Actions.
 - [x] Enable Dependabot vulnerability alerts and security updates.
-- [x] Add CodeQL workflow for Java scanning.
+- [x] Add CodeQL workflow for Java scanning. It skips while the repo is private because GitHub code scanning is not enabled yet.
 - [x] Disable blank issues and route security reports to private advisories.
 - [x] Strengthen `.gitignore` for local env files and logs.
 - [x] Fill POM license, developer, and SCM metadata.
