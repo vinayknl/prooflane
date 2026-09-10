@@ -13,18 +13,25 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>prooflane</name>
 	<description>Evidence-driven agentic workflow learning project</description>
-	<url/>
+	<url>https://github.com/vinayknl/prooflane</url>
 	<licenses>
-		<license/>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/license/mit</url>
+			<distribution>repo</distribution>
+		</license>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<id>vinayknl</id>
+			<name>Vinay Kumar</name>
+		</developer>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:https://github.com/vinayknl/prooflane.git</connection>
+		<developerConnection>scm:git:https://github.com/vinayknl/prooflane.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/vinayknl/prooflane</url>
 	</scm>
 	<properties>
 		<java.version>21</java.version>

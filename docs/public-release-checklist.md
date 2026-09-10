@@ -30,6 +30,14 @@ A general-purpose autonomous agent framework.
 - [x] Confirm `./mvnw test` passes.
 - [x] Confirm open issues are understandable to an outside engineer.
 - [x] Add repository description on GitHub.
+- [x] Add CI for pull requests and pushes to `main`.
+- [x] Add Dependabot configuration for Maven and GitHub Actions.
+- [x] Enable Dependabot vulnerability alerts and security updates.
+- [x] Add CodeQL workflow for Java scanning.
+- [x] Disable blank issues and route security reports to private advisories.
+- [x] Strengthen `.gitignore` for local env files and logs.
+- [x] Fill POM license, developer, and SCM metadata.
+- [x] Enable automatic branch deletion after merge.
 
 Suggested GitHub description:
 
@@ -42,7 +50,19 @@ Java-flavored learning project for evidence-driven agentic workflows with Spring
 - [ ] Add a short demo GIF or terminal screenshot.
 - [ ] Add `docs/architecture.md`.
 - [x] Add a license badge after license choice.
-- [ ] Add a CI workflow after the project is public.
+- [x] Add a CI workflow.
+
+## GitHub Settings To Enable After Public
+
+These are currently blocked while the repository is private on the current
+GitHub plan.
+
+- [ ] Enable branch protection on `main`.
+- [ ] Require pull request reviews before merging to `main`.
+- [ ] Require status checks to pass before merging, including CI.
+- [ ] Require branches to be up to date before merging.
+- [ ] Confirm secret scanning is enabled.
+- [ ] Confirm CodeQL runs successfully after the first public push or pull request.
 
 ## Manual GitHub Steps
 

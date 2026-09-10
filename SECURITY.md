@@ -25,8 +25,11 @@ Features that call an LLM must:
 
 ## Reporting
 
-After the repository is public, prefer a private GitHub security advisory when
-available. Until then, contact the repository owner directly with:
+Please prefer a private GitHub security advisory for sensitive reports:
+
+https://github.com/vinayknl/prooflane/security/advisories/new
+
+Include:
 
 - affected version or commit
 - reproduction steps
