@@ -1,5 +1,7 @@
 # Prooflane
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > A Java-flavored learning project for boring, explicit agentic workflows.
 
 Prooflane is a small Spring AI learning project for evidence-driven agentic
@@ -16,6 +18,24 @@ Java should own workflow state, routing, budgets, and safety.
 The first use case is a local PR-readiness check. You point Prooflane at a
 repository, it gathers evidence, a verifier returns a typed judgment, and Java
 routes the result to delivery, repair, or blocked.
+
+## What This Is
+
+Prooflane is:
+
+```text
+A learning project for agentic workflow design.
+A small Java/Spring AI example with explicit state and typed handoffs.
+A practical way to study where LLM judgment helps and where deterministic code should stay in charge.
+```
+
+Prooflane is not yet:
+
+```text
+A production PR-review tool.
+A general-purpose autonomous software delivery agent.
+A replacement for human code review, CI, or security review.
+```
 
 ## The Big Picture
 
@@ -201,6 +221,15 @@ prooflane.guardrails.estimated-output-token-budget=800
 Tests do not call paid APIs.
 
 ## Run It
+
+Requirements:
+
+```text
+Java 21 or newer
+Git
+```
+
+No API key is required for fake mode.
 
 Run tests:
 

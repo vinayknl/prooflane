@@ -21,15 +21,15 @@ A general-purpose autonomous agent framework.
 ## Required Before Public
 
 - [x] Decide and add a license: MIT.
-- [ ] Keep README positioning modest and clear.
-- [ ] Confirm no local machine paths remain in public docs.
-- [ ] Confirm no API keys, tokens, `.env` files, or private logs are committed.
-- [ ] Keep `.env.example` placeholder-only.
-- [ ] Confirm fake mode remains the default.
-- [ ] Confirm real LLM mode requires explicit opt-in.
-- [ ] Confirm `./mvnw test` passes.
-- [ ] Confirm open issues are understandable to an outside engineer.
-- [ ] Add repository description on GitHub.
+- [x] Keep README positioning modest and clear.
+- [x] Confirm no local machine paths remain in public docs.
+- [x] Confirm no API keys, tokens, `.env` files, or private logs are committed.
+- [x] Keep `.env.example` placeholder-only.
+- [x] Confirm fake mode remains the default.
+- [x] Confirm real LLM mode requires explicit opt-in.
+- [x] Confirm `./mvnw test` passes.
+- [x] Confirm open issues are understandable to an outside engineer.
+- [x] Add repository description on GitHub.
 
 Suggested GitHub description:
 
@@ -41,7 +41,7 @@ Java-flavored learning project for evidence-driven agentic workflows with Spring
 
 - [ ] Add a short demo GIF or terminal screenshot.
 - [ ] Add `docs/architecture.md`.
-- [ ] Add a license badge after license choice.
+- [x] Add a license badge after license choice.
 - [ ] Add a CI workflow after the project is public.
 
 ## Manual GitHub Steps
