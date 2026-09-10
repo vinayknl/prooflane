@@ -14,7 +14,7 @@ It should not yet be presented as:
 
 ```text
 A production PR-review tool.
-A full Skippy replacement.
+A general-purpose autonomous software delivery agent.
 A general-purpose autonomous agent framework.
 ```
 

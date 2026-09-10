@@ -242,16 +242,16 @@ Next step: Ready for delivery refresh.
 Configured max GPT-5 Mini call cost: $0.0026
 ```
 
-## How This Relates To Skippy
+## The Learning Principle
 
-Prooflane is a tiny learning version of a Skippy-like principle:
+Prooflane is built around one simple principle:
 
 ```text
 Agent nodes do judgment-heavy work.
 Workflow code enforces state, routing, and completion rules.
 ```
 
-Prooflane is deliberately smaller:
+The first version is deliberately small:
 
 ```text
 No multi-agent fan-out yet.

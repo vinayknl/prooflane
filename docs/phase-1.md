@@ -5,7 +5,7 @@ open-source-style learning project.
 
 ## Goal
 
-Build a minimal PR-readiness workflow that demonstrates Skippy-like principles:
+Build a minimal PR-readiness workflow that demonstrates evidence-driven agentic workflow principles:
 
 ```text
 evidence -> verifier judgment -> typed result -> deterministic router -> receipt

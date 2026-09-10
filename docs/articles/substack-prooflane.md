@@ -1,13 +1,13 @@
 # Prooflane: Learning Agentic Workflows The Boring Java Way
 
-I have been trying to understand agentic workflows in a way that feels natural
-to a backend engineer.
+Agentic workflows are easier to understand when they are grounded in familiar
+backend engineering ideas.
 
 Not as a pile of buzzwords. Not as a demo where an agent magically does ten
-things and I am left wondering what actually happened. I wanted something small
-enough to reason about, test, and break.
+things while the application hides what actually happened. The useful starting
+point is something small enough to reason about, test, and break.
 
-So I started a small repo called Prooflane.
+That is the purpose of Prooflane.
 
 Prooflane is a Java and Spring AI learning project for evidence-driven agentic
 workflows. The first version is intentionally boring:
@@ -23,7 +23,7 @@ That is it.
 
 And that simplicity is the point.
 
-## The Problem I Wanted To Understand
+## The Problem Prooflane Explores
 
 A lot of agent examples start with the exciting part:
 
@@ -49,9 +49,9 @@ answer basic software questions:
 - What happens when verification fails?
 - Can a test prove that a failed check does not accidentally ship?
 - How much can one run cost?
-- What exactly did we send to the model?
+- What exactly was sent to the model?
 
-Prooflane is my attempt to make those questions concrete.
+Prooflane makes those questions concrete.
 
 ## The Core Idea
 
@@ -130,10 +130,10 @@ passing and clean   -> PASS
 ```
 
 That may sound too simple, but it creates a useful baseline. Before adding a
-real model, tool calling, GitHub state, or review comments, I can test the
+real model, tool calling, GitHub state, or review comments, the project can test the
 workflow itself.
 
-This is the first lesson I wanted the repo to teach:
+This is the first lesson the repo is designed to teach:
 
 ```text
 Agentic does not have to mean autonomous.
@@ -195,7 +195,7 @@ You can introduce an LLM behind an interface without giving it ownership of the 
 
 ## Cost Guardrails From The Start
 
-I also wanted cost behavior to be visible from day one.
+Cost behavior is visible from day one.
 
 Prooflane starts with a few simple guardrails:
 
@@ -222,7 +222,7 @@ Model calls are not free control flow.
 They are resource-consuming operations that need budgets.
 ```
 
-## What I Like About This Shape
+## What This Shape Makes Clear
 
 The project maps agentic workflow concepts onto familiar backend ideas:
 
@@ -244,7 +244,7 @@ most Java engineers already know.
 
 ## What It Does Not Do Yet
 
-Prooflane is not production-ready, and I do not want to pretend otherwise.
+Prooflane is not production-ready, and it should not pretend otherwise.
 
 It does not yet:
 
@@ -267,8 +267,8 @@ It shows how to put an LLM-shaped judgment inside a deterministic workflow.
 
 ## The Bigger Lesson
 
-The biggest thing I am learning is that useful agentic systems do not have to
-start with drama.
+The bigger lesson is that useful agentic systems do not have to start with
+drama.
 
 They can start with a boring loop:
 
@@ -284,7 +284,7 @@ That loop is not glamorous, but it is understandable.
 
 And understandable is a good place to start.
 
-Prooflane is my small attempt to learn agentic workflows through that lens:
+Prooflane is a small attempt to learn agentic workflows through that lens:
 
 ```text
 Reason with AI.
@@ -293,4 +293,3 @@ Keep the workflow boring enough to trust.
 ```
 
 Repo: <add public GitHub URL after release>
-
