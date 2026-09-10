@@ -1,6 +1,6 @@
 # Phase 1 Roadmap
 
-Phase 1 turns Prooflane from a tiny local demo into a credible private
+Phase 1 turns Prooflane from a tiny local demo into a credible
 open-source-style learning project.
 
 ## Goal
@@ -37,4 +37,3 @@ evidence -> verifier judgment -> typed result -> deterministic router -> receipt
 6. Make real OpenAI verifier mode production-safe enough for local experiments.
 7. Add a GitHub readiness evidence provider.
 8. Document the end-to-end architecture for engineers.
-

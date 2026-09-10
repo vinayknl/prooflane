@@ -1,7 +1,10 @@
 # Prooflane
 
+> A Java-flavored learning project for boring, explicit agentic workflows.
+
 Prooflane is a small Spring AI learning project for evidence-driven agentic
-workflows.
+workflows. It is intentionally boring: ordinary Java services, DTOs, tests, and
+routers first; model calls only where they add judgment over evidence.
 
 It teaches one core idea:
 
@@ -211,10 +214,10 @@ Run fake mode against a repository:
 ./mvnw spring-boot:run -Dspring-boot.run.arguments=/path/to/repo
 ```
 
-Run fake mode against Prooflane itself:
+Run fake mode against this repository:
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.arguments=/Users/vinay/Projects/prooflane
+./mvnw spring-boot:run -Dspring-boot.run.arguments=.
 ```
 
 Run real OpenAI mode:

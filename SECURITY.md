@@ -1,7 +1,7 @@
 # Security Policy
 
-Prooflane is early-stage and private-first. Please report security issues
-privately until the repository is public and a formal disclosure channel exists.
+Prooflane is an early-stage learning project. Please avoid posting secrets,
+private repository content, or exploit details in public issues.
 
 ## Sensitive Data
 
@@ -25,11 +25,11 @@ Features that call an LLM must:
 
 ## Reporting
 
-For now, open a private issue or contact the repository owner directly with:
+After the repository is public, prefer a private GitHub security advisory when
+available. Until then, contact the repository owner directly with:
 
 - affected version or commit
 - reproduction steps
 - expected and actual behavior
 - security impact
 - any secret exposure risk
-
