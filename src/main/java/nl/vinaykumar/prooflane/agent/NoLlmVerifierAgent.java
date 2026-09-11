@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConditionalOnProperty(name = "prooflane.agent.mode", havingValue = "fake", matchIfMissing = true)
-class FakeVerifierAgent implements VerifierAgent {
+@ConditionalOnProperty(name = "prooflane.agent.mode", havingValue = "no-llm", matchIfMissing = true)
+class NoLlmVerifierAgent implements VerifierAgent {
 
 	@Override
 	public VerificationResult verify(EvidencePacket evidence) {

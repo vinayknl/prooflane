@@ -10,7 +10,7 @@ budgets, and safety gates.
   Java code should own routing and terminal state.
 - Prefer compact evidence packets over dumping whole repositories, logs, or
   files into the model.
-- Fake-mode tests must remain the default. Unit tests and behavioral evals must
+- No-LLM tests must remain the default. Unit tests and behavioral evals must
   not require paid API calls.
 - Make cost behavior visible. Any feature that can call an LLM should have a
   bounded call count and context budget.
@@ -22,7 +22,7 @@ Requirements:
 
 - Java 21 or newer
 - Git
-- No API key is required for fake mode
+- No API key is required for No-LLM mode
 
 Run:
 
@@ -54,6 +54,6 @@ Every contribution should include:
 - Keep PRs focused.
 - Do not commit API keys, logs with secrets, or local environment files.
 - Mention any new cost, token, network, or tool-execution behavior.
-- Use fake agents or deterministic fixtures for tests unless a real-provider
+- Use No-LLM verifiers or deterministic fixtures for tests unless a real-provider
   integration test is explicitly isolated and opt-in.
 

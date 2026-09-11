@@ -25,7 +25,7 @@ A general-purpose autonomous agent framework.
 - [x] Confirm no local machine paths remain in public docs.
 - [x] Confirm no API keys, tokens, `.env` files, or private logs are committed.
 - [x] Keep `.env.example` placeholder-only.
-- [x] Confirm fake mode remains the default.
+- [x] Confirm No-LLM mode remains the default.
 - [x] Confirm real LLM mode requires explicit opt-in.
 - [x] Confirm `./mvnw test` passes.
 - [x] Confirm open issues are understandable to an outside engineer.

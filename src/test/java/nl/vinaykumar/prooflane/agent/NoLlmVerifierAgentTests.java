@@ -7,9 +7,9 @@ import nl.vinaykumar.prooflane.model.VerificationStatus;
 
 import org.junit.jupiter.api.Test;
 
-class FakeVerifierAgentTests {
+class NoLlmVerifierAgentTests {
 
-	private final FakeVerifierAgent verifier = new FakeVerifierAgent();
+	private final NoLlmVerifierAgent verifier = new NoLlmVerifierAgent();
 
 	@Test
 	void blocksWhenGitStatusFails() {
