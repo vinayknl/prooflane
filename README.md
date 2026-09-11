@@ -90,7 +90,7 @@ sequenceDiagram
 
 ## Current Readiness Rules
 
-Fake mode is the default. It makes readiness decisions with simple Java rules:
+No-LLM mode is the default. It makes readiness decisions with simple Java rules:
 
 ```mermaid
 flowchart TD
@@ -139,7 +139,7 @@ flowchart TB
 
     subgraph agents["Agents"]
         Agent["VerifierAgent"]
-        Fake["FakeVerifierAgent"]
+        NoLlm["NoLlmVerifierAgent"]
         OpenAI["OpenAiVerifierAgent"]
     end
 
@@ -153,7 +153,7 @@ flowchart TB
     Tools --> Command
     Evidence --> Packet
     Workflow --> Agent
-    Agent --> Fake
+    Agent --> NoLlm
     Agent --> OpenAI
     OpenAI --> Guardrails
     Workflow --> Router
@@ -173,13 +173,13 @@ VerificationRouter owns the next route.
 WorkflowRun records what happened.
 ```
 
-## Fake Mode And Real LLM Mode
+## No-LLM Mode And Real LLM Mode
 
 Prooflane has two verifier implementations:
 
 ```mermaid
 flowchart LR
-    A["VerifierAgent"] --> B["FakeVerifierAgent"]
+    A["VerifierAgent"] --> B["NoLlmVerifierAgent"]
     A --> C["OpenAiVerifierAgent"]
     B --> D["No API key"]
     B --> E["Deterministic tests"]
@@ -188,7 +188,7 @@ flowchart LR
     C --> H["Protected by cost guardrails"]
 ```
 
-Fake mode is best for learning, tests, and workflow design.
+No-LLM mode is best for learning, tests, and workflow design.
 
 Real OpenAI mode is best when you want the model to interpret messy evidence,
 summarize risks, or produce a more useful next step.
@@ -211,7 +211,7 @@ flowchart TD
 Defaults:
 
 ```properties
-prooflane.agent.mode=fake
+prooflane.agent.mode=no-llm
 prooflane.guardrails.max-evidence-chars=12000
 prooflane.guardrails.max-llm-calls=1
 prooflane.guardrails.estimated-input-token-budget=4000
@@ -229,7 +229,7 @@ Java 21 or newer
 Git
 ```
 
-No API key is required for fake mode.
+No API key is required for No-LLM mode.
 
 Security note:
 
@@ -245,13 +245,13 @@ Run tests:
 ./mvnw test
 ```
 
-Run fake mode against a repository:
+Run No-LLM mode against a repository:
 
 ```bash
 ./mvnw spring-boot:run -Dspring-boot.run.arguments=/path/to/repo
 ```
 
-Run fake mode against this repository:
+Run No-LLM mode against this repository:
 
 ```bash
 ./mvnw spring-boot:run -Dspring-boot.run.arguments=.

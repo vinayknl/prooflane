@@ -13,7 +13,7 @@ evidence -> verifier judgment -> typed result -> deterministic router -> receipt
 
 ## Scope
 
-- Keep fake mode as the default.
+- Keep No-LLM mode as the default.
 - Add opt-in real OpenAI mode with clear cost guardrails.
 - Add behavioral evals for route correctness.
 - Add compact evidence packets and token-budget estimates.
